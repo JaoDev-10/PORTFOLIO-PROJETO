@@ -1,0 +1,361 @@
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Goldman',sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+
+/* estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 200px
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    margin-top: -20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .btn-contato button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #00ff08f5;
+}
+
+/* Define o menu lateral escondido inicialmente */
+.side-menu {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  top: 0;
+  right: 0; 
+  background-color: #111; 
+  overflow-x: hidden; 
+  transition: 0.3s; 
+  padding-top: 60px;
+  z-index: 1000; 
+  color: white;
+}
+
+/* Estilo para os links dentro do menu */
+.side-menu a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #00ff08;
+}
+
+/* Estilo para o botão de fechar */
+.side-menu .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+
+/* estilo do topo do site*/
+section .topo-do-site{
+    padding: 40px 4%;
+}
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+    margin-left: 40px;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+
+
+.topo-do-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .img-topo-site{
+    margin-right: 40px;
+    width: 400px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0
+    }
+    100%{
+        top: 30px
+    }
+}
+
+/* estilo do projeto de vida */
+.projeto-de-vida{
+    padding: 40px 4%;
+}
+
+ .flex{
+    display: flex;
+    gap: 80px;
+}
+
+.projeto-de-vida .projeto-box{
+    color: #fff;
+    padding: 80px;
+    border-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.projeto-de-vida .projeto-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+
+}
+
+.projeto-de-vida .projeto-box svg{
+    color: #00ff08;
+}
+
+.projeto-de-vida .projeto-box h3{
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+/* estilo do sobre */
+section .sobre{
+    padding: 80px 4%;
+
+}
+
+img{
+    width: 300px;
+}
+
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* considerações finais */
+
+section .consideracoes-finais{
+    padding: 80px 4%;
+}
+
+.consideracoes-finais .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.consideracoes-finais .txt-consideracoes-finais{
+    color: #fff;
+}
+
+.consideracoes-finais .interface h2{
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.consideracoes-finais .interface h2 span{
+    color: #00ff08;
+    text-align: center;
+}
+
+.consideracoes-finais .txt-consideracoes-finais p{
+    text-align: center;
+    font-size: 15px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+/* Box estilosa para considerações finais */
+.box-consideracoes {
+    background-color: #0000;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.box-consideracoes p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* rodapé */
+footer {
+    text-align: center;
+    padding: 33px;
+    background-color: #111111;
+    color: white;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.social-footer nav a {
+    color: #00ff08;
+}
+
+.social-footer p a {
+    color: whitesmoke;
+}
+
+
+.social-footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.social-footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social-footer p a {
+    text-decoration: underline;
+}
+
+.icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.icons a:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.icons a[href*="wa.me"]:hover img {
+  filter: drop-shadow(0 0 2px #1df524);
+}
+
+.icons a[href*="github"]:hover img {
+  filter: drop-shadow(0 0 2px white);
+}
+
+.icons a[href*="instagram"]:hover img {
+  filter: drop-shadow(0 0 2px #E1306C);
+}
+
