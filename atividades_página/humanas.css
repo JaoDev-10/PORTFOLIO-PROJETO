@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Goldman',sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+h1, h2, h3, h4 {
+  color: #00ff08;
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.galeria {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff08;
+}
