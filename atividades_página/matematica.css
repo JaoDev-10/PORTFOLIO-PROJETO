@@ -94,3 +94,21 @@ h1, h2, h3, h4 {
   transform: scale(1.05);
   box-shadow: 0 0 15px #00ff08;
 }
+
+button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+ button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #00ff08f5;
+}
