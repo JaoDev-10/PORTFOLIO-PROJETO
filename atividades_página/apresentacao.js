@@ -37,5 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
 
     // Inicia com a matéria correta no cabeçalho
-    materiaDisplay.textContent = slides[currentSlide].dataset.materia;
+    materiaDisplay.textContent = slides[currentSlide].dataset.materia; // Mantém o comportamento padrão
+
+    // Verifica se há um parâmetro na URL para iniciar em um slide específico
+    const urlParams = new URLSearchParams(window.location.search);
+    const materiaInicial = urlParams.get('materia');
+    if (materiaInicial) {
+        const startIndex = Array.from(slides).findIndex(slide => slide.dataset.materia === materiaInicial);
+        if (startIndex !== -1) {
+            goToSlide(startIndex);
+        }
+    }
 });
