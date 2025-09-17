@@ -49,6 +49,9 @@ button {
     transition: 0.3s;
     margin-bottom: 40px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
  button:hover{
