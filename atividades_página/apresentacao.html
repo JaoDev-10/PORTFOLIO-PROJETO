@@ -1,105 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <title>Slider do meu Portfólio Virtual</title>
+    <title>Apresentação das Atividades</title>
     <link rel="stylesheet" href="apresentacao.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="interface">
-        
-        <div class="nome-materia">
-            <h1>
-                Linguagens
-            </h1>
+    <header>
+        <div class="interface">
+            <div class="nome-materia">Linguagens</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="atividades.html">Voltar</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <nav class="menu">
-            <ul>
-                <li>Kercia Rimaelle & Cláudia Oliveira</li>
-            </ul>
-        </nav>
+    <main>
+        <section class="slider">
+            <div class="slider-container">
+                <!-- Slides de Linguagens -->
+                <article class="slider-box ativo" data-materia="Linguagens">
+                    <div>
+                        <h2>Eixo 1: Atividade sobre as férias em inglês</h2>
+                        <p>Comentamos sobre as atividades das férias em inglês.</p>
+                    </div>
+                    <img src="img-atividades/Vacations.jpg" alt="Slide sobre cultura digital">
+                </article>
+                <article class="slider-box" data-materia="Linguagens">
+                    <div>
+                        <h2>Eixo 2: Slide sobre a obra de Jane Austen</h2>
+                        <p>Apresentação em slide sobre a vida e a obra da escritora Jane Austen, analisando suas principais contribuições para a literatura inglesa.</p>
+                    </div>
+                    <img src="img-atividades/slide-jane austin.jpg" alt="Mapa mental sobre literatura">
+                </article>
 
-    </div>
-</header>
+                <article class="slider-box" data-materia="Linguagens">
+                    <div>
+                        <h2>Eixo 3: Modernismo e Análise Literária</h2>
+                        <p>Aprofundamento no Modernismo brasileiro e análise da obra de autores como Clarice Lispector, explorando suas contribuições para a literatura.</p>
+                    </div>
+                    <img src="img-atividades/slide-linguagens-clarice.jpg" alt="Slide sobre Clarice Lispector">
+                </article>
 
-<section class="slider">
+                <!-- Slides de Humanas -->
+                <article class="slider-box" data-materia="Humanas">
+                    <div>
+                        <h2>Eixo 1: Globalização e Migrações</h2>
+                        <p>Discussão sobre os processos de globalização e seus impactos nos fluxos migratórios, analisando as dinâmicas sociais e culturais contemporâneas.</p>
+                    </div>
+                    <img src="img-atividades/Globalização.jpg" alt="Atividade sobre globalização">
+                </article>
+                <article class="slider-box" data-materia="Humanas">
+                    <div>
+                        <h2>Eixo 2: Fatores Locacionais e Urbanização</h2>
+                        <p>Análise dos fatores que influenciam a localização de atividades econômicas e o processo de urbanização, com foco em mapas mentais e redações.</p>
+                    </div>
+                    <img src="img-atividades/mapa mental ileana fotres locacionais.jpg" alt="Mapa mental sobre fatores locacionais">
+                </article>
+                <article class="slider-box" data-materia="Humanas">
+                    <div>
+                        <h2>Eixo 3: Mídia, Política e Conflitos</h2>
+                        <p>Estudo da relação entre mídia e política, e análise de conflitos históricos como a Guerra Fria, através de slides e textos dissertativos.</p>
+                    </div>
+                    <img src="img-atividades/midia-politica-eixo3.jpg" alt="Slide sobre mídia e política">
+                </article>
 
-        <div class="slider-container">
-            <div class="slider-box ativo">
+                <!-- Slides de Natureza -->
+                <article class="slider-box" data-materia="Natureza">
+                    <div>
+                        <h2>Eixo 1: Estruturas e Energia</h2>
+                        <p>Exploração de cadeias carbônicas, fontes de energia como o carvão, tecidos biológicos e os princípios do motor elétrico.</p>
+                    </div>
+                    <img src="img-atividades/cadeias carbonicas.jpg" alt="Atividade sobre cadeias carbônicas">
+                </article>
+                <article class="slider-box" data-materia="Natureza">
+                    <div>
+                        <h2>Eixo 2: Ondas eletromagnéticas</h2>
+                        <p>Estudo aprofundado sobre as propriedades e o espectro das ondas eletromagnéticas, utilizando mapas mentais para organizar os conceitos.</p>
+                    </div>
+                    <img src="img-atividades/mapa mental-ondas.jpg" alt="Mapa mental sobre ondas">
+                </article>
+                <article class="slider-box" data-materia="Natureza">
+                    <div>
+                        <h2>Eixo 3: Linha do tempo sobre a física moderna</h2>
+                        <p>Criação de uma linha do tempo detalhando os marcos e as principais descobertas da física moderna, desde Planck até as teorias mais recentes.</p>
+                    </div>
+                    <img src="img-atividades/linha-do-tempo-eixo3.jpg" alt="Linha do tempo de ciências da natureza">
+                </article>
 
-                <div> 
-                <h2>Mapa Mental sobre Modernismo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dicta exercitationem repellendus repellat molestias doloremque possimus qui alias sint quaerat blanditiis amet quisquam reiciendis nesciunt excepturi quam quas fugiat ab.</p>
-                </div>
+                <!-- Slides de Matemática -->
+                <article class="slider-box" data-materia="Matemática">
+                    <div>
+                        <h2>Eixo 1: Estatística e Gráficos</h2>
+                        <p>Introdução à estatística descritiva, com foco na construção e interpretação de diferentes tipos de gráficos e tabelas para análise de dados.</p>
+                    </div>
+                    <img src="img-atividades/slide-gráficos-estatísticos.jpg" alt="Slide sobre gráficos estatísticos">
+                </article>
+                <article class="slider-box" data-materia="Matemática">
+                    <div>
+                        <h2>Eixo 2: Análise Combinatória</h2>
+                        <p>Estudo dos princípios de contagem, arranjos e combinações para resolver problemas de análise combinatória.</p>
+                    </div>
+                    <img src="img-atividades/analise combinatoria.jpg" alt="Atividade sobre análise combinatória">
+                </article>
+                 <article class="slider-box" data-materia="Matemática">
+                    <div>
+                        <h2>Eixo 3: Lista sobre Probabilidade</h2>
+                        <p>Resolução de uma lista de exercícios focada em problemas de probabilidade, abordando conceitos como espaço amostral, eventos e cálculo de chances.</p>
+                    </div>
+                    <img src="img-atividades/lista-regiane-25.jpg" alt="Painel de matemática">
+                </article>
 
-                <img src="img-atividades/modernismo.jpg">
+                <!-- Slides do Senai -->
+                <article class="slider-box" data-materia="Senai">
+                    <div>
+                        <h2>Eixo 1: Fundamentos e Soft Skills</h2>
+                        <p>Desenvolvimento de competências como trabalho em equipe, ética profissional e organização, além de introdução à tecnologia da informação.</p>
+                    </div>
+                    <img src="img-atividades/slide-trabalho-em-equipe.jpg" alt="Slide sobre trabalho em equipe">
+                </article>
+                <article class="slider-box" data-materia="Senai">
+                    <div>
+                        <h2>Eixo 2: Site do Portfólio Virtual</h2>
+                        <p>Desenvolvimento do site do portfólio virtual, aplicando conceitos de HTML, CSS e JavaScript para criar uma interface interativa e responsiva.</p>
+                    </div>
+                    <img src="img-atividades/site-portifolio.jpg" alt="Site de portfólio desenvolvido">
+                </article>
+                <article class="slider-box" data-materia="Senai">
+                    <div>
+                        <h2>Eixo 3: DER no Draw.io</h2>
+                        <p>Desenvolvemos um Diagrama de Entidade e Relacionamento no draw.io.</p>
+                    </div>
+                    <img src="img-atividades/draw.io-senai-diagrama.jpg" alt="Diagrama de projeto no Draw.io">
+                </article>
             </div>
 
-            <div class="slider-box">
-
-                <div> 
-                <h3>Trabalho sobre as Férias em Inglês</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dicta exercitationem repellendus repellat molestias doloremque possimus qui alias sint quaerat blanditiis amet quisquam reiciendis nesciunt excepturi quam quas fugiat ab.</p>
-                </div>
-
-                <img src="img-atividades/Vacations.jpg">
+            <!-- Controles do Slider -->
+            <div class="setas">
+                <button id="prevBtn">❮</button>
+                <button id="nextBtn">❯</button>
             </div>
 
-
-            <div class="slider-box">
-
-                <div>
-                <h4>Slide sobre Rachel de Queiroz</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dicta exercitationem repellendus repellat molestias doloremque possimus qui alias sint quaerat blanditiis amet quisquam reiciendis nesciunt excepturi quam quas fugiat ab.</p>
-                </div>
-    
-                <img src="img-atividades/slide-modernismo.jpg">
+            <div class="btn-nav-box">
+                <!-- Botões de navegação serão gerados pelo JavaScript -->
             </div>
+        </section>
+    </main>
 
-            <div class="slider-box">
-
-                <div>
-                     <h4>Redação</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dicta exercitationem repellendus repellat molestias doloremque possimus qui alias sint quaerat blanditiis amet quisquam reiciendis nesciunt excepturi quam quas fugiat ab.</p>
-                </div>
-               
-                <img src="img-atividades/redação.jpg">
-            </div>
-
-        <!-- Setas -->
-        <div class="setas">
-
-        <button id="anterior">&#10094;</button>
-        <button id="proxima">&#10095;</button>
-
-        </div>
-
-        <!-- botões de navegação -->
-
-        <div class="btn-nav-box">
-            <div class="btn-nav ativo"></div>
-            <div class="btn-nav"></div>
-            <div class="btn-nav"></div>
-            <div class="btn-nav"></div>
-        </div>
-
-    </div>
-
-</section>
     <script src="apresentacao.js"></script>
 </body>
 </html>

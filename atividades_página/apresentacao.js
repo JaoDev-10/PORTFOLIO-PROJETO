@@ -1,41 +1,41 @@
+document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slider-box');
-    const btnProxima = document.getElementById('proxima');
-    const btnAnterior = document.getElementById('anterior');
-    const btnNavs = document.querySelectorAll('.btn-nav');
-    let currentIndex = 0;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const navBox = document.querySelector('.btn-nav-box');
+    const materiaDisplay = document.querySelector('.nome-materia');
 
-    function mostrarSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.remove('ativo');
-            btnNavs[i].classList.remove('ativo');
-            if (i === index) {
-                slide.classList.add('ativo');
-                btnNavs[i].classList.add('ativo');
-            }
+    let currentSlide = 0;
+
+    // Gera os botões de navegação inferiores dinamicamente
+    slides.forEach((slide, index) => {
+        const navBtn = document.createElement('button');
+        navBtn.classList.add('btn-nav');
+        if (index === 0) {
+            navBtn.classList.add('ativo');
+        }
+        navBtn.addEventListener('click', () => {
+            goToSlide(index);
         });
+        navBox.appendChild(navBtn);
+    });
+
+    const navButtons = document.querySelectorAll('.btn-nav');
+
+    function goToSlide(slideIndex) {
+        slides[currentSlide].classList.remove('ativo');
+        navButtons[currentSlide].classList.remove('ativo');
+        
+        currentSlide = (slideIndex + slides.length) % slides.length;
+        
+        slides[currentSlide].classList.add('ativo');
+        navButtons[currentSlide].classList.add('ativo');
+        materiaDisplay.textContent = slides[currentSlide].dataset.materia;
     }
 
-    btnProxima.addEventListener('click', () => {
-        currentIndex++;
-        if (currentIndex >= slides.length) {
-            currentIndex = 0;
-        }
-        mostrarSlide(currentIndex);
-    });
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
 
-    btnAnterior.addEventListener('click', () => {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = slides.length - 1;
-        }
-        mostrarSlide(currentIndex);
-    });
-
-    btnNavs.forEach((btn, i) => {
-        btn.addEventListener('click', () => {
-            currentIndex = i;
-            mostrarSlide(currentIndex);
-        });
-    });
-
-    mostrarSlide(currentIndex);
+    // Inicia com a matéria correta no cabeçalho
+    materiaDisplay.textContent = slides[currentSlide].dataset.materia;
+});
