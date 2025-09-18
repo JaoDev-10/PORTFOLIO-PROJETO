@@ -65,7 +65,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 header .btn-contato button {
@@ -358,3 +358,4 @@ footer {
 .icons a[href*="instagram"]:hover img {
   filter: drop-shadow(0 0 2px #E1306C);
 }
+
