@@ -65,7 +65,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 header .btn-contato button {
@@ -141,8 +141,6 @@ section .topo-do-site .flex{
     margin-left: 40px;
     animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
 }
-
-
 
 .topo-do-site h1 span{
     color: #00ff08;
